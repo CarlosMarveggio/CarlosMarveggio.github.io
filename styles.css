@@ -141,8 +141,6 @@ header{
     width: 20px;
 }
 
-
-
 .title{
     padding: 50px 0 20px 20px;
     color: #fdfdfd;
@@ -156,18 +154,60 @@ header{
     position: relative;
 }
 
+/* Clases del formulario */
 
-.tab{
-    margin-right: 20px;
-    color: #fdfdfd;
-    text-align: center;
-    padding: 10px 35px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 800;
-    background-color: #24252a;
-    cursor: pointer;
+.formulario-titulo{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
 }
+
+.formulario-content{
+    width: 100%;
+    display: flex;
+    /* position: relative; */
+    /* align-items: center;  */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.formulario-contacto{
+    background: linear-gradient(#131a56, #334) ;
+    padding: 50px 15px ;    
+    width: 60%;
+    min-width: 300px;
+    height: auto;
+    color: white;
+    /* padding: 30px; */
+    border-radius: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    flex-direction: column;
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form{
+    padding: 5px;
+    font-size: 0.75em;
+    border: none;
+    min-width: 300px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-bottom: white 3px;
+}
+
+#form-btn{
+    margin-top: 30px;
+    font-size: 1em;
+}
+
+/* Fin de clases del Formularios */
 
 
 .box-container-1{
@@ -205,19 +245,6 @@ header{
     padding: 15px 0;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    border: 1px solid #334;
-    color: #334;
-    font-size: 16px;
-}
-
-.btn:hover{
-    background-color: rgb(220,20,60);
-    border-color: rgb(220,20,60);
-    color: #fdfdfd;
-}
 
 .icons{
     display: flex;
@@ -245,9 +272,9 @@ header{
 }
 
 .buy img{
-    padding-top: 5px;
-    width: 35px;
-    height: 20px;
+    padding-top: 2px;
+    width: 55px;
+    height: 28px;
 }
 
 
@@ -405,11 +432,11 @@ header{
     }
 
     .btn-1{
-        margin: 0 0 20px 0;
+        margin: 20px 0 20px 0;
     }
 
     .btn-2{
-        margin: 0 0 20px 0;
+        margin: 20px 0 20px 0;
     }
 
     .header-img{
@@ -430,9 +457,6 @@ header{
         align-items: center;
     }
 
-    .tab{
-        margin-bottom: 25px;
-    }
 
     .box-container{
         grid-template-columns: 1fr;
