@@ -76,7 +76,7 @@ header {
 .header-content {
   display: flex;
   align-items: center;
-  padding: 200px 0 150px 0;
+  padding: 200px 50px 150px 50px;
 }
 
 .header-txt {
@@ -154,60 +154,6 @@ header {
   position: relative;
 }
 
-/* Clases del formulario */
-
-.formulario-titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 150px 0 50px 0;
-}
-
-.formulario-content {
-  width: 100%;
-  display: flex;
-  /* position: relative; */
-  /* align-items: center;  */
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.formulario-contacto {
-  background: linear-gradient(#131a56, #334);
-  padding: 50px 15px;
-  width: 60%;
-  min-width: 300px;
-  height: auto;
-  color: white;
-  border-radius: 15px;
-  font-size: 1.5em;
-  text-align: center;
-  flex-direction: column;
-}
-
-.form-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.input-form {
-  padding: 5px;
-  font-size: 0.75em;
-  border: none;
-  min-width: 250px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  border-bottom: white 3px;
-}
-
-#form-btn {
-  margin-top: 30px;
-  font-size: 1em;
-}
-
-/* Fin de clases del Formularios */
-
 
 .box-container-1 {
   display: grid;
@@ -282,7 +228,6 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 50vh; */
 }
 
 .info-content {
@@ -379,7 +324,80 @@ header {
   background-color: #e70825;
 }
 
-@media(max-width: 991px) {
+/* Clases del formulario */
+
+.formulario-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0 50px 0;
+}
+
+.formulario-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.formulario-contacto {
+  background: linear-gradient(#131a56, #334);
+  padding: 50px 15px;
+  width: 60%;
+  min-width: 300px;
+  height: auto;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  flex-direction: column;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form {
+  padding: 5px;
+  font-size: 0.75em;
+  border: none;
+  min-width: 250px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-bottom: white 3px;
+}
+
+#form-btn {
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+/* Fin de clases del Formularios */
+
+
+/* Clases de hoja Información (carrusel*/
+
+#inf-header{
+	background-image: url(imagenes/inf-fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inf-titulo{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0 50px 0;
+}
+
+/* Fin de clases de hoja información */
+
+/* Medidas para visualización en moviles  */
+
+@media(max-width: 720px) {
 
   .menu {
     padding: 20px;
