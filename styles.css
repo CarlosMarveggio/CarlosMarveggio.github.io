@@ -393,6 +393,15 @@ header {
   padding: 150px 0 50px 0;
 }
 
+.inf-historia{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+
+
 /* Fin de clases de hoja información */
 
 /* Medidas para visualización en moviles  */
