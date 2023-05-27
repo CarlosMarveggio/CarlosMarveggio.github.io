@@ -8,6 +8,7 @@
 	<title>Contacto</title>
 	<link rel="shortcut icon" href="imagenes/logo-inv.png" type="image/x-icon" />
 	<link rel="stylesheet" href="styles.css" />
+	<script defer src="./formulario.js"></script>
 </head>
 
 <body>
@@ -34,24 +35,24 @@
 	<main>
 		<div class="formulario-content container">
 			<div class="formulario-contacto">
-				<div class="form-items">
-					<label>Nombre</label>
-					<input type="text" class="input-form" placeholder="nombre" />
-					<label>Correo electrónico</label>
-					<input type="email" class="input-form" placeholder="correo" />
-					<label>Dejenos su teléfono</label>
-					<input type="number" class="input-form" placeholder="número de teléfono" />
+				<form id="form-contacto" class="form-items" action="" method="">
+					<label for="nombre">Nombre</label>
+					<input id="nombre" name="nombre" type="text" class="input-form" placeholder="nombre" />
+					<label for="correo">Correo electrónico</label>
+					<input id="correo" name="correo" type="email" class="input-form" placeholder="correo" />
+					<label for="telefono">Dejenos su teléfono</label>
+					<input id="telefono" name="telefono" type="number" class="input-form" placeholder="número de teléfono" />
 					<label for="motivo-contacto">Motivo de contacto</label>
-					<select class="input-form" name="motivo" id="motivo-contacto">
-						<option value=" value="">--Indique motivo de contacto--</option>
-						<option value=" Compra-masiva">Compra masiva de productos</option>
+					<select id="motivo" name="motivo" class="input-form">
+						<option value="value=">--Indique motivo de contacto--</option>
+						<option value="Compra-masiva">Compra masiva de productos</option>
 						<option value="invertir">Invertir en la compañía</option>
 						<option value="devolucion">Devolver un producto</option>
 						<option value="queja">Realizar una queja formal</option>
 						<option value="legales">Inicio de acciones legales</option>
 					</select>
-					<button class="btn-1" id="form-btn">Enviar</button>
-				</div>
+					<button id="form-btn" class="btn-1" >Enviar</button>
+				</form>
 			</div>
 		</div>
 	</main>
