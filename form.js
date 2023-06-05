@@ -14,6 +14,8 @@ const campos = {
 }
 
 const validarFormulario = (e) => {
+    document.getElementById('faltan-campos').classList.remove('mensaje-error')
+    document.getElementById('faltan-campos').classList.add('mensaje-error-inactivo')
 	switch (e.target.name) {
 		case "nombre":
             if (expresiones.nombre.test(e.target.value)){
@@ -36,8 +38,8 @@ const validarFormulario = (e) => {
                 campos.correo = true;
             }else{
                 document.getElementById('correo').classList.add('error')
-                document.querySelector('#msj-correo').classList.remove('mensaje-error')
-                document.querySelector('#msj-correo').classList.add('mensaje-error-inactivo')
+                document.querySelector('#msj-correo').classList.add('mensaje-error')
+                document.querySelector('#msj-correo').classList.remove('mensaje-error-inactivo')
                 campos.correo = false;
             }
 		break;
@@ -49,8 +51,8 @@ const validarFormulario = (e) => {
                 campos.telefono = true;
             }else{
                 document.getElementById('telefono').classList.add('error')
-                document.querySelector('#msj-telefono').classList.remove('mensaje-error')
-                document.querySelector('#msj-telefono').classList.add('mensaje-error-inactivo')
+                document.querySelector('#msj-telefono').classList.add('mensaje-error')
+                document.querySelector('#msj-telefono').classList.remove('mensaje-error-inactivo')
                 campos.telefono = false;
             }
 		break;
@@ -65,15 +67,17 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e)=> {
     e.preventDefault();
 
-    console.log(campos);
-
     if(campos.nombre && campos.correo && campos.telefono){
+        
         alert('Se envían los datos:\n'+
         'nombre: '+formulario.nombre.value + '\n'+
         'correo: '+formulario.correo.value +'\n'+
         'telefono: '+formulario.telefono.value+'\n'+
         'motivo de contacto: '+formulario.motivo.value)
         formulario.reset();
+    }else{
+        document.getElementById('faltan-campos').classList.add('mensaje-error')
+        document.getElementById('faltan-campos').classList.remove('mensaje-error-inactivo')
     }
     
 });
