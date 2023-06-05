@@ -365,7 +365,7 @@ header {
   border: none;
   min-width: 250px;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   border-bottom: white 3px;
 }
 
@@ -373,6 +373,21 @@ header {
   margin-top: 30px;
   font-size: 1em;
 }
+
+.error {
+  border: 3px solid red;
+  color: rgb(223, 0, 0);
+  background-color: #fff8b8c0;
+ }
+
+ .mensaje-error{
+  color: orangered;  
+  font-size: 0.5em;
+ }
+
+ .mensaje-error-inactivo{
+  display: none;
+ }
 
 /* Fin de clases del Formularios */
 
