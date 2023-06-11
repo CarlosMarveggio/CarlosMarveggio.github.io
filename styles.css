@@ -80,7 +80,7 @@ header {
 }
 
 .header-txt {
-  width: 40%;
+  /* width: 40%; */
   padding-right: 25px;
 }
 
@@ -158,6 +158,7 @@ header {
 .box-container-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: auto auto auto auto;  no sirve para pantalla pequeña*/
   gap: 20px;
 }
 
@@ -380,13 +381,19 @@ header {
   background-color: #fff8b8c0;
  }
 
- .mensaje-error{
+ .mensaje-error-activo{
   color: orangered;  
   font-size: 0.5em;
  }
 
  .mensaje-error-inactivo{
   display: none;
+ }
+
+ .mensajes-ok{
+  padding-top: 40px;
+  font-size: 0.5em;
+  color: #c1c931;
  }
 
 /* Fin de clases del Formularios */

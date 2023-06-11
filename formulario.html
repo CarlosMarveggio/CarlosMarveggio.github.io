@@ -35,18 +35,18 @@
 	<main>
 		<div class="formulario-content container">
 			<div class="formulario-contacto">
-				<form id="form-contacto" class="form-items" action="">
-					<label for="nombre">Nombre</label>
-					<input id="nombre" name="nombre" type="text" class="input-form" placeholder="nombre" />
+				<form onsubmit="return validar()" id="f_contacto" class="form-items">
+					<label for="f_nombre">Nombre</label>
+					<input id="f_nombre" name="f_nombre" type="text" class="input-form" placeholder="nombre" />
 					<p id="msj-nombre" class="mensaje-error-inactivo">debe escribir un nombre válido</p>
-					<label for="correo">Correo electrónico</label>
-					<input id="correo" name="correo" type="email" class="input-form" placeholder="correo" />
+					<label for="f_correo">Correo electrónico</label>
+					<input id="f_correo" name="f_correo" type="email" class="input-form" placeholder="correo" />
 					<p id="msj-correo" class="mensaje-error-inactivo">debe escribir un correo válido</p>
-					<label for="telefono">Dejenos su teléfono</label>
-					<input id="telefono" name="telefono" type="number" class="input-form" placeholder="número de teléfono" />
+					<label for="f_telefono">Dejenos su teléfono</label>
+					<input id="f_telefono" name="f_telefono" type="number" class="input-form" placeholder="número de teléfono" />
 					<p id="msj-telefono" class="mensaje-error-inactivo">debe escribir un teléfono válido</p>
-					<label for="motivo-contacto">Motivo de contacto</label>
-					<select id="motivo" name="motivo" class="input-form">
+					<label for="f_motivo">Motivo de contacto</label>
+					<select id="f_motivo" name="f_motivo" class="input-form">
 						<option value="value=">--Indique motivo de contacto--</option>
 						<option value="Compra-masiva">Compra masiva de productos</option>
 						<option value="invertir">Invertir en la compañía</option>
@@ -54,9 +54,13 @@
 						<option value="queja">Realizar una queja formal</option>
 						<option value="legales">Inicio de acciones legales</option>
 					</select>
-					<button type="submit" id="form-btn" class="btn-1" >Enviar</button>
+					<p id="msj-motivo" class="mensaje-error-inactivo">seleccione un motivo de contacto</p>
+					<button onclick="return validar()" type="submit" id="form-btn" class="btn-1" >Enviar</button>
 					<p id="faltan-campos" class="mensaje-error-inactivo">Por favor rellene el formulario antes de enviar</p>
 				</form>
+				<div id="mensajes" class="mensajes-ok">
+
+				</div>
 			</div>
 		</div>
 	</main>
